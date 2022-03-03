@@ -7,14 +7,14 @@ html {
 }
 
 body {
-    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    font-family: "Roboto", sans-serif;
     margin: 0;
 }
 
 h1,
 h2,
 h3 {
-    font-family: "Courier New", Courier, monospace;
+    font-family: "Montserrat", sans-serif;
 }
 
 img {
@@ -22,9 +22,10 @@ img {
 }
 
 main#home-page {
-    background-image: url(/images/billetto-editorial-334686.jpg);
+    background-image: url(/images/scott-webb-mainpicture.jpg);
     background-attachment: fixed;
     background-size: cover;
+    color: white;
 }
 
 section {
@@ -75,7 +76,7 @@ input {
 footer {
     display: flex;
     flex-direction: column;
-    background-color: brown;
+    background-color: #3e3636;
     padding: 2rem 2rem;
     color: white;
 }
@@ -122,6 +123,10 @@ footer ul {
     align-items: center;
 }
 
+.flex.align-end {
+    align-items: flex-end;
+}
+
 .flex.justify-center {
     justify-content: center;
 }
@@ -134,7 +139,7 @@ footer ul {
     justify-content: space-between;
 }
 
-.flex > img {
+.flex.justify- .flex > img {
     height: 350px;
     object-fit: cover;
     object-position: center;
@@ -152,6 +157,11 @@ footer ul {
     background-color: white;
 }
 
+.bg-75 {
+    background-color: #d72323;
+    opacity: 75%;
+}
+
 .m-0 {
     margin: 0 !important;
 }
@@ -167,6 +177,10 @@ footer ul {
 
 .f-50 {
     flex: 0 0 50%;
+}
+
+.f-60 {
+    flex: 0 0 60%;
 }
 
 /* TABLET */
