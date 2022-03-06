@@ -4,7 +4,10 @@
         <meta charset="UTF-8" />
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <meta name="description" content="Comunity Science Museeum" />
+        <meta
+            name="description"
+            content="Comunity Science Museeum Exhibition Events Schedules"
+        />
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
         <link
@@ -16,74 +19,98 @@
     </head>
     <body>
         <header>
-            <div>
-                <a href="index.html"
-                    ><img
+            <div class="container">
+                <a href="index.html" class="brand">
+                    <img
                         src="/images/open-science-logo.png"
                         alt="museeumlogo"
                         class="logo"
-                /></a>
-                <h1>Community Science Museeum</h1>
-            </div>
+                    />
+                    <h2>Community Science Museum</h2>
+                </a>
 
-            <nav>
                 <input type="checkbox" id="menu" class="btn-mobile-menu" />
-                <label for="menu">
-                    <img
-                        src="/images/icons8-menu-24.png"
-                        alt="Mobile menu button"
-                    />
-                </label>
+                <label for="menu"> </label>
 
-                <img src="/images/icons8-search-50.png" alt="search icon" />
-                <input type="text" placeholder="Search" />
-                <ul>
-                    <li><a href="index.html">Home Page</a></li>
-                    <li><a href="visit.html">Visit Us</a></li>
-                    <li>
-                        <a href="exhibitionevents.html" class="active"
-                            >Exhibition and Events</a
-                        >
-                    </li>
-                    <li><a href="explore.html">Explore</a></li>
-                    <li><a href="supportus.html">Support Us</a></li>
-                </ul>
-            </nav>
-        </header>
-        <main id="home-page">
-            <div class="flex align-end f-60 bg-75">
-                <h1>BOOK A TOUR GUIDE</h1>
-                <a href="#">Book Now</a>
+                <nav>
+                    <ul>
+                        <li>
+                            <a href="index.html">Home Page</a>
+                        </li>
+                        <li><a href="visit.html">Visit Us</a></li>
+                        <li>
+                            <a href="exhibitionevents.html" class="active"
+                                >Exhibition and Events</a
+                            >
+                        </li>
+                        <li><a href="explore.html">Explore</a></li>
+                        <li><a href="supportus.html">Support Us</a></li>
+                        <li>
+                            <a href="#" class="search">
+                                <img
+                                    src="/images/icons8-search-50.png"
+                                    alt="search button"
+                                />
+                                <span>Search</span>
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
             </div>
-
-            <section class="flex column gap-3 fullwidth bg-white">
-                <h1>EXHIBITION SPACES</h1>
-                <div class="flex column">
-                    <img
-                        src="/images/cosmologymain.jpg"
-                        alt="colorful sky with man standing"
-                    />
-                    <h2>Cosmology</h2>
-                    <p>
-                        Explore the wonders of our cosmos. Our fantastic
-                        exhibition, ‘The Sky Above Us’, explores the night sky
-                        and what we can see and know about the universe around
-                        us. We’ll locate the various constellations and galaxies
-                        that can be seen and learn a bit about the early
-                        navigators who used the stars to travel by. Follow the
-                        journey of our solar exploration: from early Arab
-                        traders, to Galileo’s telescope, to the latest
-                        exploration of the planets in our solar system.
-                    </p>
+        </header>
+        <main>
+            <section class="hero">
+                <img
+                    src="/images/genoa-956405_1920.jpg"
+                    alt="ants on museum display"
+                />
+                <div class="page-banner bg-75">
+                    <div class="container flex column row-md">
+                        <h2>BOOK A TOUR GUIDE</h2>
+                        <a href="#" class="btn">Book Now</a>
+                    </div>
                 </div>
+            </section>
 
-                <div class="flex column row-lg">
-                    <img
-                        src="/images/johannes-plenio-aWDgqexSxA0-unsplash.jpg"
-                        alt="people in line shadow"
-                    />
+            <h1 class="page-title">EXHIBITION SPACES</h1>
+
+            <section>
+                <div class="container flex column row-md gap-2">
+                    <div class="f-40">
+                        <img
+                            class="img-fancy"
+                            src="/images/cosmologymain.jpg"
+                            alt="colorful sky with man standing"
+                        />
+                    </div>
                     <div class="flex column">
-                        <h2>Evolution</h2>
+                        <h2 class="m-0">Cosmology</h2>
+                        <p>
+                            Explore the wonders of our cosmos. Our fantastic
+                            exhibition, ‘The Sky Above Us’, explores the night
+                            sky and what we can see and know about the universe
+                            around us. We’ll locate the various constellations
+                            and galaxies that can be seen and learn a bit about
+                            the early navigators who used the stars to travel
+                            by. Follow the journey of our solar exploration:
+                            from early Arab traders, to Galileo’s telescope, to
+                            the latest exploration of the planets in our solar
+                            system.
+                        </p>
+                    </div>
+                </div>
+            </section>
+            <section class="bg-alt">
+                <div class="container flex column row-reverse-md gap-2">
+                    <div class="f-40">
+                        <img
+                            class="img-fancy"
+                            src="/images/johannes-plenio-aWDgqexSxA0-unsplash.jpg"
+                            alt="people in line shadow"
+                        />
+                    </div>
+                    <div class="flex column">
+                        <h2 class="m-0">Evolution</h2>
                         <p>
                             For centuries, philosophers and scientists have
                             wrestled with the question of our origins. Where do
@@ -102,130 +129,159 @@
                         </p>
                     </div>
                 </div>
-
-                <div class="flex column">
-                    <img
-                        src="/images/bermix-studio-yHTDa4FIv3o-unsplash.jpg"
-                        alt="scientist holding chemicals"
-                    />
-                    <h2>Biology and Medicine</h2>
-                    <p>
-                        From micro-organisms to the human body, major
-                        breakthroughs in biology are offering us unique insights
-                        into the great wonders of the tiny world.
-                    </p>
-                    <p>
-                        For many people their life expectancy is much longer and
-                        their quality of life much improved, thanks to the
-                        growth of our understanding of medicine. Over a series
-                        of exhibits we explore the history of medicine and take
-                        a look at some major breakthroughs including the
-                        discovery of penicillin and the first heart transplant.
-                    </p>
-
-                    <p>
-                        of our great medicinal discoveries have come not only
-                        from the lab, but also from observing animals in the
-                        wild. Often our fellow creatures have beat us to it.
-                    </p>
+            </section>
+            <section>
+                <div class="container flex column row-md gap-2">
+                    <div class="f-40">
+                        <img
+                            class="img-fancy"
+                            src="/images/bermix-studio-yHTDa4FIv3o-unsplash.jpg"
+                            alt="scientist holding chemicals"
+                        />
+                    </div>
+                    <div class="flex column">
+                        <h2 class="m-0">Biology and Medicine</h2>
+                        <p>
+                            From micro-organisms to the human body, major
+                            breakthroughs in biology are offering us unique
+                            insights into the great wonders of the tiny world.
+                        </p>
+                        <p>
+                            For many people their life expectancy is much longer
+                            and their quality of life much improved, thanks to
+                            the growth of our understanding of medicine. Over a
+                            series of exhibits we explore the history of
+                            medicine and take a look at some major breakthroughs
+                            including the discovery of penicillin and the first
+                            heart transplant.
+                        </p>
+                        <p>
+                            of our great medicinal discoveries have come not
+                            only from the lab, but also from observing animals
+                            in the wild. Often our fellow creatures have beat us
+                            to it.
+                        </p>
+                    </div>
                 </div>
-
-                <div class="flex column">
-                    <img
-                        src="/images/owen-beard-K21Dn4OVxNw-unsplash.jpg"
-                        alt="robot with small screen"
-                    />
-                    <h2>Robotics and AI</h2>
-                    <p>
-                        The information revolution is here and robotics and
-                        artificial intelligence are the science of the future.
-                        From useful home applications of AI to industrial uses
-                        of robotics, the future is here. You can even say hello
-                        and shake the hand of Rob the Robot.
-                    </p>
+            </section>
+            <section class="bg-alt">
+                <div class="container flex column row-reverse-md gap-2">
+                    <div class="f-40">
+                        <img
+                            class="img-fancy"
+                            src="/images/owen-beard-K21Dn4OVxNw-unsplash.jpg"
+                            alt="robot with small screen"
+                        />
+                    </div>
+                    <div class="flex column">
+                        <h2 class="m-0">Robotics and AI</h2>
+                        <p>
+                            The information revolution is here and robotics and
+                            artificial intelligence are the science of the
+                            future. From useful home applications of AI to
+                            industrial uses of robotics, the future is here. You
+                            can even say hello and shake the hand of Rob the
+                            Robot.
+                        </p>
+                    </div>
                 </div>
-                <div class="flex column">
-                    <img
-                        src="/images/jason-blackeye--s1w1SguZTI-unsplash.jpg"
-                        alt="windmills"
-                    />
-                    <h2>Ecology</h2>
-                    <p>
-                        As we learn more and more of the impact humans are
-                        having on the planet, the more important it becomes that
-                        scientists explore how to create a sustainable future
-                        not just for humans but for the whole planet.
-                    </p>
+            </section>
+            <section>
+                <div class="container flex column row-md gap-2">
+                    <div class="f-40">
+                        <img
+                            class="img-fancy"
+                            src="/images/jason-blackeye--s1w1SguZTI-unsplash.jpg"
+                            alt="windmills"
+                        />
+                    </div>
+                    <div class="flex column">
+                        <h2 class="m-0">Ecology</h2>
+                        <p>
+                            As we learn more and more of the impact humans are
+                            having on the planet, the more important it becomes
+                            that scientists explore how to create a sustainable
+                            future not just for humans but for the whole planet.
+                        </p>
 
-                    <p>
-                        In our ecology section of the museum, we unpack the
-                        dangers we currently face including global warming,
-                        extinction of species, and pollution. But we also focus
-                        on the positive ways we can all contribute to a brighter
-                        future.
-                    </p>
+                        <p>
+                            In our ecology section of the museum, we unpack the
+                            dangers we currently face including global warming,
+                            extinction of species, and pollution. But we also
+                            focus on the positive ways we can all contribute to
+                            a brighter future.
+                        </p>
+                    </div>
                 </div>
             </section>
         </main>
         <footer>
-            <div class="flex column">
-                <h3>Connect with us</h3>
-                <div class="flex gap-2 justify-center">
-                    <a href="#" class="sm-icon">
-                        <img
-                            src="/images/icons8-facebook-f-32.png"
-                            alt="facebook icon"
-                    /></a>
-                    <a href="#" class="sm-icon">
-                        <img
-                            src="/images/icons8-twitter-30.png"
-                            alt="twitter icon"
-                    /></a>
-                    <a href="#" class="sm-icon">
-                        <img
-                            src="/images/icons8-instagram-26.png"
-                            alt="instagram icon"
-                    /></a>
-                    <a href="#" class="sm-icon">
-                        <img
-                            src="/images/icons8-google-30.png"
-                            alt="google icon"
-                    /></a>
+            <div class="container flex column gap-3">
+                <div class="flex column gap-3 row-md justify-between">
+                    <div class="flex column">
+                        <h3>Connect with us</h3>
+                        <div class="flex gap-2 justify-center">
+                            <a href="#" class="sm-icon">
+                                <img
+                                    src="/images/icons8-facebook-f-32.png"
+                                    alt="facebook icon"
+                            /></a>
+                            <a href="#" class="sm-icon">
+                                <img
+                                    src="/images/icons8-twitter-30.png"
+                                    alt="twitter icon"
+                            /></a>
+                            <a href="#" class="sm-icon">
+                                <img
+                                    src="/images/icons8-instagram-26.png"
+                                    alt="instagram icon"
+                            /></a>
+                            <a href="#" class="sm-icon">
+                                <img
+                                    src="/images/icons8-google-30.png"
+                                    alt="google icon"
+                            /></a>
+                        </div>
+                    </div>
+
+                    <div class="flex column f-40" id="newsletter">
+                        <h3>Enter your email address</h3>
+                        <div class="flex column gap-2">
+                            <input type="email" placeholder="Email" />
+                            <a href="#" class="btn">Sign up</a>
+                        </div>
+                    </div>
                 </div>
 
-                <div>
-                    <h3>Enter your email address</h3>
-                    <div class="flex column gap-2">
-                        <input type="email" placeholder="Email" />
-                        <a href="#" class="btn">Sign up</a>
+                <div class="flex column gap-2 row-md f-wrap justify-between">
+                    <div>
+                        <h3>Opening Hours</h3>
+                        <ul>
+                            <li><strong>Mon:</strong> Closed</li>
+                            <li><strong>Tue:</strong> 10:00-16:00</li>
+                            <li><strong>Wed:</strong> 10:00-16:00</li>
+                            <li><strong>Thu:</strong> 10:00-16:00</li>
+                            <li><strong>Fri:</strong> 10:00-19:00</li>
+                            <li><strong>Sat:</strong> 09:00-16:00</li>
+                            <li><strong>Sun:</strong> 09:00-13:00</li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h3>Address</h3>
+                        <p>Karl Johans Gate</p>
+                        <p>1010 Oslo</p>
+                    </div>
+                    <div class="f-40">
+                        <h3>Contact</h3>
+                        <p><strong>Phone:</strong> +47 12345678</p>
+                        <p>
+                            <strong>Email:</strong> sciencemuseum@community.com
+                        </p>
                     </div>
                 </div>
             </div>
-
-            <div>
-                <div>
-                    <h4>Opening Hours</h4>
-                    <ul>
-                        <li>Monday: Closed</li>
-                        <li>Tuesday, Wednesday, Thursday: 10:00-16:00</li>
-                        <li>Friday: 10:00-19:00</li>
-                        <li>Saturday: 09:00-16:00</li>
-                        <li>Sunday: 09:00-13:00</li>
-                    </ul>
-                </div>
-                <div>
-                    <h4>Address</h4>
-                    <span> Karl Johans Gate </span>
-                    <span>1010 Oslo</span>
-                </div>
-                <div>
-                    <h4>Contact</h4>
-                    <span> Phone: +47 12345678 </span>
-                    <span> Email: sciencemuseum@community.com </span>
-                </div>
-            </div>
-            <div>
-                <p>&copy; Copyright by Cristina Syversen2022</p>
+            <div class="copyright">
+                <p>Copyright &copy; Cristina Syversen 2022</p>
             </div>
         </footer>
     </body>
